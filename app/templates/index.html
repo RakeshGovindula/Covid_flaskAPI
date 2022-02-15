@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <table class="table">
+		<tr>
+			<th>Observation Date</th>
+			<th>State</th>
+			<th>Confirmed</th>
+			<th>Deaths</th>
+			<th>Recovered</th>
+		</tr>         
+		    {% for corona in res %}
+			<tr>
+				<td>{{ corona.ObservationDate }}</td>
+				<td>{{ corona.State }}</td>
+				<td>{{ corona.Confirmed }}</td>
+				<td>{{ corona.Deaths }}</td>
+				<td>{{ corona.Recovered }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+</body>
+</html>
